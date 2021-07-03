@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/fietsenwinkel.css">
+<link rel="stylesheet" href="fietsenwinkel/css/fietsenwinkel.css">
 <?php 
     session_start();
     include("include/functions.php");
