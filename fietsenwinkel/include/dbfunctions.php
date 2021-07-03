@@ -1,16 +1,12 @@
 <?php
 
-defined('BASEPATH') or exit('No direct script access allowed'); //prevent direct script access
+defined('BASEPATH') or exit('No direct script access allowed'); 
 $host = 'localhost';
-$user = 's157472_fietsenwinkel'; //database naam
-$password = 'fietsen'; //database wachtwoord
-$dbname = 's157472_fietsenwinkel'; //database naam
-$dsn = '';
-// $host = 'localhost';
-// $user = 'root'; //database naam
-// $password = ''; //database wachtwoord
-// $dbname = 'bestevaer'; //database naam
-// $dsn = '';
+$user = 's160294_fietsenwinkel'; 
+$password = '160294_fietsenwinkel'; 
+$dbname = 's160294_fietsenwinkel'; 
+$dsn = 'localhost';
+
 
 try {
     $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;

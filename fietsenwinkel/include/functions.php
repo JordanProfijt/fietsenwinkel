@@ -5,6 +5,7 @@
     function getFooter() {
         return "Dit is de footer";
     }
+    
     function getNav() {
         $menu = "<a href='index.php'>Home</a>";
         $menu .= "<a href='fietsen.php?>page=Fietsen'>Fietsen</a>";
@@ -15,6 +16,7 @@
 
         return $menu;
     }
+    
     function getAside() {
         return "Dit is de zijkant";
     }
@@ -26,6 +28,7 @@
         }
         return $page;
     }
+
     function getSection() {
         $page = getPage();
         $section = "Dit is de inhoud van de fietsen pagina";
@@ -47,3 +50,4 @@
         }
         return $section;
     }
+ 

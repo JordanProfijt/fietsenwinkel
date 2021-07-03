@@ -1,7 +1,6 @@
 <?php
 function getFietsen()
-{
-
+{    
 }
 
 function showFietsen($fietsen)
@@ -13,9 +12,9 @@ function showFietsen($fietsen)
         // $password = "";
 
         // ao-alkmaar datebase 
-        $dsn = "mysql:host=localhost;dbname=s157472_fietsenwinkel";
-        $username = "s157472_fietsenwinkel";
-        $password = "fietsen";
+        $dsn = "mysql:host=localhost;dbname=s160294_fietsenwinkel";
+        $username = "s160294_fietsenwinkel";
+        $password = "160294_fietsenwinkel";
 
         // Verbinding maken met de PDO-class, en een table maken met alle informaties die vanuit datebase (schepen) opgehaald zijn.
         try {

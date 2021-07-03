@@ -1,14 +1,26 @@
 <?php
 
+function getHeader()
+{
+    $header =  "Dit is de fietsen pagina";
+    if ($_SESSION['login']) {
+        $username = $_SESSION['username'];
+        $role = $_SESSION['role'];
+        $header .= " - Welkom: $username ($role)";
+    }
+    return $header;
+}
+
 function getFooter()
 {
     return "Dit is de footer";
 }
+
 function getNav()
 {
     $menu = "<a href='index.php'>Home</a>";
     if (checkRole(1)) {
-        $menu .= "<a href='fietsen.php?page=fietsen'>Fietsen</a>";
+        $menu .= "<a href='fietsen.php?page=Fietsen'>Fietsen</a>";
     }
     if (checkRole(2)) {
         $menu .= "<a href='index.php?page=bestellen'>Bestellen</a>";
@@ -26,10 +38,12 @@ function getNav()
 
     return $menu;
 }
+
 function getAside()
 {
     return "Dit is de zijkant";
 }
+
 function getPage()
 {
     if (isset($_GET["page"])) {
@@ -39,6 +53,7 @@ function getPage()
     }
     return $page;
 }
+
 
 function checkRole($role)
 {
@@ -77,3 +92,4 @@ function getSection()
     }
     return $section;
 }
+
